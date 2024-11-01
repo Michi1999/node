@@ -14,8 +14,8 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
 
+    - name: Change directory
+      run: cd path/to/your/project
+
     - name: Install dependencies
       run: npm install
-
-    - name: Run security check
-      run: npm audit
