@@ -14,8 +14,8 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
 
-    - name: Install dependencies
-      run: npm install tools/eslint
+    - name: Install ESLint
+      run: npm install eslint
 
     - name: Install yamllint
       run: |
@@ -24,3 +24,5 @@ jobs:
 
     - name: Run yamllint
       run: yamllint .github/workflows/*.yml
+
+
