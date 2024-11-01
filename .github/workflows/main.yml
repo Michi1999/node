@@ -14,11 +14,8 @@ jobs:
     - name: Check out code
       uses: actions/checkout@v2
 
-    - name: Change directory
-      run: cd path/to/your/project
-
     - name: Install dependencies
-      run: npm install
+      run: npm install tools/eslint
 
     - name: Install yamllint
       run: |
